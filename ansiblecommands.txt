@@ -12,6 +12,8 @@ ansible dev -b -m package -a "name=git state=installed"
 ansible dev -b -m package -a "name=docker state=installed"
 ansible dev -b -m shell -a "docker pull httpd"
 ansible dev -b -m shell -a "docker run -d --name httpd-container httpd"
+ansible dev -b -m command -a "git clone https://github.com/HariHaran3027/commands.git"
+
 
 
 
